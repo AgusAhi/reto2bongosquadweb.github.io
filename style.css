@@ -1,0 +1,24 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* styles.css */
+
+/* Estilos por defecto (modo claro) */
+body {
+    background-color: white;
+    color: black;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
