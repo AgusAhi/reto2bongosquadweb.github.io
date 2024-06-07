@@ -3,9 +3,18 @@
     height: 100px;
 }
 
-/* styles.css */
+.bongoSquadText {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* Estilos por defecto (modo claro) */
+/* Li botone */
+
 body {
     background-color: white;
     color: black;
