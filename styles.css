@@ -1,16 +1,35 @@
+/* Nav Bar */
+
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
 }
 
-.bongoSquadText {
+.navbar-nav .nav-item .bongoSquadText {
     font-size: 25px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 6px;
+}
+
+.navbar-nav .nav-item.dropdown.text-light:nth-of-type(3) .nav-link.dropdown-toggle {
+    
 }
 
 /* Li botone */
@@ -24,10 +43,49 @@ button {
     margin: 20px;
     padding: 10px;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 }
 
 /* Modo oscuro */
 body.dark-mode {
     background-color: black;
     color: white;
+    transition: background-color 5s ease, color 10s ease;
 }
+
+#toggle-dark-mode {
+    margin: 20px;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+#toggle-dark-mode img {
+    width: 70px;  
+    height: 70px; 
+    cursor: pointer;
+    margin-left: 8px; /* Espacio entre el texto y la imagen */
+}
+
+/* Modo claro */
+body.light-mode {
+    background-color: white;
+    color: black;
+    transition: background-color 5s ease, color 10s ease;
+}
+
+#modeText {
+    margin-right: 8px; /* Espacio entre el texto y la imagen */
+}
+ 
