@@ -31,7 +31,15 @@
 
               <!-- Dropdowns -->
               <ul class="navbar-nav">
-                <!-- Settings Dropdown -->
+                <!-- Installation Dropdown -->
+                <li class="nav-item dropdown text-lights">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Download</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="manualInstalation.html" class="dropdown-item">Instalation Manual</a></li>
+                    <li><a href="installer.exe" download class="dropdown-item">Download Now</li></a>
+                  </ul>
+                </li>
+                <!-- Design Dropdown -->
                 <li class="nav-item dropdown text-lights">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Design</a>
                   <ul class="dropdown-menu">
@@ -55,6 +63,59 @@
           </div>
       </div>
   </nav>
+
+    <!-- Contenido del manual de la aplicación de mensajería -->
+    <div class="container mt-4">
+        <h1 class="text-center">Manual de la Aplicación de Mensajería</h1>
+        <section class="mt-4">
+            <h2>Introducción</h2>
+            <p>Bienvenido al manual de la aplicación de mensajería Bongo. Esta guía le proporcionará toda la información necesaria para instalar, configurar y utilizar nuestra aplicación de manera eficiente.</p>
+        </section>
+        <section class="mt-4">
+            <h2>Configuración Inicial</h2>
+            <ol>
+                <li>Abra la aplicación y haga clic en "Crear Cuenta".</li>
+                <li>Ingrese sus datos personales y cree una contraseña segura.</li>
+                <li>Verifique su dirección de correo electrónico a través del enlace enviado a su bandeja de entrada.</li>
+                <li>Inicie sesión con sus credenciales recién creadas.</li>
+            </ol>
+        </section>
+
+        <!-- Crea una imagen aquí -->
+        <div class="container mt-4">
+            <img src="LogIn.png" alt="Imagen" class="img-fluid">
+        </div>
+            
+        <section class="mt-4">
+            <br>
+            <h2>Uso de la Aplicación</h2>
+            <h3>Enviar un Mensaje</h3>
+            <ul>
+                <li>Abra la aplicación y navegue a la sección "Chats".</li>
+                <li>Seleccione un contacto de su lista o busque un nuevo contacto utilizando la barra de búsqueda.</li>
+                <li>Escriba su mensaje en el campo de texto y haga clic en el botón "Enviar".</li>
+            </ul>
+            <h3>Crear un Grupo</h3>
+            <ul>
+                <li>En la sección "Grupos", haga clic en "Crear Grupo".</li>
+                <li>Ingrese el nombre del grupo y añada miembros desde su lista de contactos.</li>
+                <li>Haga clic en "Crear" para finalizar la creación del grupo.</li>
+            </ul>
+        </section>
+    </div>
+    <br>
+     <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Bongo FCT. Todos los derechos reservados.</p>
+        <p>Síguenos en
+            <a href="https://github.com/DiegoGMD/Reto2" class="text-white text-decoration-none mx-2">Github</a> |
+            <a href="https://twitter.com" class="text-white text-decoration-none mx-2">Twitter</a>
+        </p>
+    </footer>
+  
+
+
+  <!-- Javascript -->
   <script src="script.js"></script>
 </body>
 </html>
