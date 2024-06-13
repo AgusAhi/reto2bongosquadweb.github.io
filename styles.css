@@ -53,7 +53,7 @@ button {
 body.dark-mode {
     background-color: black;
     color: white;
-    transition: background-color 5s ease, color 10s ease;
+    transition: background-color 2s ease, color 10s ease;
 }
 
 #toggle-dark-mode {
@@ -78,10 +78,18 @@ body.dark-mode {
 body.light-mode {
     background-color: white;
     color: black;
-    transition: background-color 5s ease, color 10s ease;
+    transition: background-color 2s ease, color 10s ease;
 }
 
 #modeText {
     margin-right: 8px; /* Espacio entre el texto y la imagen */
 }
- 
+
+.userManualContent {
+    text-align: justify;
+}
+
+.userManualImage {
+    width: 50%;
+    height: auto;
+}
