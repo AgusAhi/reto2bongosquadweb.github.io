@@ -22,12 +22,16 @@
               <!-- Logo and Bongo Squad Text -->
               <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                      <img class="logo" src="images/logo.png" alt="logo">
-                  </li>
-                  <li class="nav-item">
-                      <p class="bongoSquadText">Bongo FCT</p>
-                  </li>
-              </ul>
+                    <a href="index.html">
+                        <img class="logo" src="logo.png" alt="logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">
+                        <p class="bongoSquadText">Bongo FCT</p>
+                    </a>
+                </li>
+            </ul>
 
               <!-- Dropdowns -->
               <ul class="navbar-nav">
@@ -43,27 +47,16 @@
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Download</a>
                   <ul class="dropdown-menu">
                     <li><a href="manualInstalation.html" class="dropdown-item">Instalation Manual</a></li>
-                    <li><a href="installer.exe" download class="dropdown-item">Download Now</li></a>
+                    <li><a href="Reto2.jar" download class="dropdown-item">Download Now</a></li>
                   </ul>
                 </li>
-                <!-- Design Dropdown -->
-                <li class="nav-item dropdown text-lights">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Design</a>
-                  <ul class="dropdown-menu">
-                      <li>
-                          <button id="toggle-dark-mode">
-                              <span id="modeText">Dark Mode</span>
-                              <img src="images/blanco.png" alt="Cambiar Modo">
-                          </button>
-                      </li>
-                  </ul>
-              </li>
+
                 <!-- Language Dropdown -->
                 <li class="nav-item dropdown text-light">
                     <a class="nav-link dropdown-toggle" id="dropdownIdioma" href="#" role="button" data-bs-toggle="dropdown">Language</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="indice.html">Spanish</a></li>
+                        <li><a class="dropdown-item" href="manualDeAplicacion.html">Spanish</a></li>
                     </ul>
                 </li>
               </ul>
@@ -72,46 +65,60 @@
   </nav>
     <!-- Contenido del manual de la aplicación de mensajería -->
     <div class="container mt-4">
-        <h1 class="text-center">Manual de Usuario</h1>
+        <h1 class="text-center">User Manual</h1>
         <section class="mt-4">
-            <h2>Introducción</h2>
-            <p>Bienvenido al manual de la aplicación de mensajería Bongo. 
-                Esta guía le proporcionará toda la información necesaria para instalar, configurar y 
-                utilizar nuestra aplicación de manera eficiente.</p>
+            <h2>Introduction</h2>
+            <p>Welcome to the Bongo messaging application manual. This guide will provide you with all the necessary information to install, configure, and use our application efficiently.</p>
         </section>
+        
         <section class="mt-4">
-            <h2>Inicio de Sesión</h2>
-            <p class="userManualContent">Para iniciar sesión necesitarás poner tu nombre en el campo de "Username" y en el campo de 
-                "Password" necesitarás poner tu contraseña y le daremos al boton de "OK", también podrás 
-                consultar el botón help para más información</p>
+            <h2>Login</h2>
+            <p class="userManualContent">To log in, you will need to enter your name in the "Username" field and your password in the "Password" field. Then, click the "OK" button. You can also consult the help button for more information.</p>
             <img class="userManualImage" src="inicioSesion.png" alt="userManual">
             <br> <br>
-            <p class="userManualContent">Arriba a la izquierda saldrá con el nombre en el que has iniciado sesión y podremos elegir entre
-                hacer una consulta para que te dé información sobre las FCT o Modificar cualquiera de los profesores, empresas etc. Ahora 
-                exmplicaremos los apartados en profundidad.
-            </p>
+            <p class="userManualContent">Your username will appear at the top left after logging in, and you will be able to choose between making an inquiry to get information about FCT or modifying any of the teachers, companies, etc. Now, we will explain the sections in detail.</p>
             <img class="userManualImage" src="FirstScreen.png" alt="userManual">
             <br> <br>
-            <h2>Consulta</h2>
-            <p class="userManualContent">
-                En el apartado de consulta seleccionaremos una de las 8 consultas que podremos realizar y le daremos al boton de "OK".
-                Tambien habrá otro botón de volver en caso de que fuera necesario.
-            </p>
+            <h2>Query</h2>
+            <p class="userManualContent">In the query section, select one of the 8 queries you can perform and click the "OK" button. There will also be a back button in case it is needed.</p>
             <img class="userManualImage" src="selectQuerry.png" alt="userManual">
             <br> <br>
-            <h2>Funcionamiento de las Consultas</h2>
-            <p class="userManualContent">
-                Para que puedas realizar la consulta deberás hacer click en los desplegables y en este caso seleccionar, la compañía 
-                y te dará la información deseada cuando le des al botón de "OK".
-                Tambien podrás volver con el botón de "Back".
-            </p>
+            <h2>Query Functionality</h2>
+            <p class="userManualContent">To perform a query, click on the dropdown menus, select the company, and you will get the desired information when you click the "OK" button. You can also go back with the "Back" button.</p>
             <img class="userManualImage" src="C1.png" alt="userManual">
             <br> <br>
-            <h2>Modificación</h2>
+            <h2>Modification</h2>
+            <p class="userManualContent">First, select the element you want to modify, whether it's the Company, company contacts, teachers, or FCT, and click the "OK" button.</p>
             <img class="userManualImage" src="modification.png" alt="userManual">
+            <br> <br>
+            <p class="userManualContent">Once you've chosen the element, you'll have 3 options:</p>
+            <ul class="userManualContent">
+                <li>
+                    <p class="userManualContent">1. Add: Using the right panel, you can add elements by selecting them in the text boxes.</p>
+                </li>
+                <li>
+                    <p class="userManualContent">2. Modify: To modify an element, select the element you want to modify from the left panel, change the data you want with the text panels, and click the modify button.</p>
+                </li>
+                <li>
+                    <p class="userManualContent">3. Delete: To delete an element, do the same, select the element, and click the delete button directly.</p>
+                </li>
+                <li>
+                    <p class="userManualContent">4. Update: Finally, if you want to update the element, click the update button.</p>
+                </li>
+            </ul>
+            <img class="userManualImage" src="Modification2.png" alt="userManual">
         </section>
-
+               
     </div>
-    <br>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Bongo FCT. Todos los derechos reservados.</p>
+        <p>Síguenos en
+            <a href="https://github.com/DiegoGMD/Reto2" class="text-white text-decoration-none mx-2">Github</a> |
+            <a href="https://x.com/AhisDols?t=B1PZME416blg_tIE1JHD2Q&s=09" class="text-white text-decoration-none mx-2">Twitter</a>
+        </p>
+    </footer>
+    <!-- Javascript -->
+  <script src="script.js"></script>
 </body>
 </html>

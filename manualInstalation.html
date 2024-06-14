@@ -22,12 +22,16 @@
               <!-- Logo and Bongo Squad Text -->
               <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                      <img class="logo" src="images/logo.png" alt="logo">
-                  </li>
-                  <li class="nav-item">
-                      <p class="bongoSquadText">Bongo FCT</p>
-                  </li>
-              </ul>
+                    <a href="index.html">
+                        <img class="logo" src="logo.png" alt="logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">
+                        <p class="bongoSquadText">Bongo FCT</p>
+                    </a>
+                </li>
+            </ul>
 
               <!-- Dropdowns -->
               <ul class="navbar-nav">
@@ -43,34 +47,62 @@
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Download</a>
                   <ul class="dropdown-menu">
                     <li><a href="manualInstalation.html" class="dropdown-item">Instalation Manual</a></li>
-                    <li><a href="installer.exe" download class="dropdown-item">Download Now</li></a>
+                    <li><a href="Reto2.jar" download class="dropdown-item">Download Now</li></a>
                   </ul>
                 </li>
-                <!-- Design Dropdown -->
-                <li class="nav-item dropdown text-lights">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Design</a>
-                  <ul class="dropdown-menu">
-                      <li>
-                          <button id="toggle-dark-mode">
-                              <span id="modeText">Dark Mode</span>
-                              <img src="images/blanco.png" alt="Cambiar Modo">
-                          </button>
-                      </li>
-                  </ul>
-              </li>
                 <!-- Language Dropdown -->
                 <li class="nav-item dropdown text-light">
                     <a class="nav-link dropdown-toggle" id="dropdownIdioma" href="#" role="button" data-bs-toggle="dropdown">Language</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="indice.html">Spanish</a></li>
+                        <li><a class="dropdown-item" href="manualDeInstalación.html">Spanish</a></li>
                     </ul>
                 </li>
               </ul>
           </div>
       </div>
   </nav>
-    <h1>Manual de Instalación</h1>
-    <a href="installer.exe" download>Installation</a>
+  <br><br><br><br><br>
+<!-- Installation Manual Content -->
+<div class="container mt-4">
+  <h1 class="text-center">Installation Manual</h1>
+
+  <!-- Introduction -->
+  <section class="mt-4">
+      <h2>Introduction</h2>
+      <p>Welcome to the installation manual for the Bongo FCT application. This guide will provide you with all the necessary steps to install and configure our application efficiently.</p>
+  </section>
+
+  <!-- Program Download -->
+  <section class="mt-4">
+      <h2>Program Download</h2>
+      <p>To download the program, you can do so from the Download dropdown in the top right corner or by clicking on the following link:</p>
+      <p><a href="Reto2.jar" download>Download here</a></p>
+  </section>
+
+  <!-- Installation Instructions -->
+  <section class="mt-4">
+      <h2>Installation</h2>
+      <p>Follow the steps below to install Bongo FCT on your system:</p>
+      <ol>
+          <li>Download the installation file from the provided link.</li>
+          <li>Run the downloaded installation file.</li>
+          <li>And it will connect to our database once credentials are verified</li>
+      </ol>
+  </section>
+</div>
+<br><br><br><br><br><br><br>
+
+    </div>
+        <!-- Pie de página -->
+        <footer class="bg-dark text-white text-center py-3 mt-4">
+          <p>&copy; 2024 Bongo FCT. Todos los derechos reservados.</p>
+          <p>Síguenos en
+              <a href="https://github.com/DiegoGMD/Reto2" class="text-white text-decoration-none mx-2">Github</a> |
+              <a href="https://x.com/AhisDols?t=B1PZME416blg_tIE1JHD2Q&s=09" class="text-white text-decoration-none mx-2">Twitter</a>
+          </p>
+      </footer>
+    <!-- Javascript -->
+  <script src="script.js"></script>
 </body>
 </html>

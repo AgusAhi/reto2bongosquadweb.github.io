@@ -1,79 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <title>Bongo FCT</title>
-   <link rel="stylesheet" href="styles.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Bongo FCT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="light-mode">
 
- <!-- Navbar -->
- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-     <div class="container-fluid">
-         <!-- Botón para el menú colapsable en dispositivos pequeños -->
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-             <span class="navbar-toggler-icon"></span>
-         </button>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <!-- Botón para el menú desplegable en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <!-- Contenido de la Navbar -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <!-- Logo y texto de Bongo Squad -->
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a href="indice.html">
+                          <img class="logo" src="logo.png" alt="logo">
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="indice.html">
+                          <p class="bongoSquadText">Bongo FCT</p>
+                      </a>
+                  </li>
+              </ul>
+                <!-- Desplegables -->
+                <ul class="navbar-nav">
+                    <!-- Desplegable Manual -->
+                    <li class="nav-item dropdown text-lights">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Manual</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="manualDeAplicacion.html" class="dropdown-item">Manual de la Aplicación</a></li>
+                    </ul>
+                    </li>
+                    <!-- Desplegable Descarga -->
+                    <li class="nav-item dropdown text-lights">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Descarga</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="manualDeInstalación.html" class="dropdown-item">Manual de Instalación</a></li>
+                        <li><a href="Reto2.jar" download class="dropdown-item">Descargar Ahora</a></li>
+                    </ul>
+                    </li>
+                    <!-- Desplegable Diseño -->
+                    <li class="nav-item dropdown text-lights">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Diseño</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <button id="toggle-dark-mode">
+                                <span id="modeText">Modo Oscuro</span>
+                                <img src="blanco.png" alt="Cambiar Modo">
+                            </button>
+                        </li>
+                    </ul>
+                    </li>
+                    <!-- Desplegable Idioma -->
+                    <li class="nav-item dropdown text-light">
+                        <a class="nav-link dropdown-toggle" id="dropdownIdioma" href="#" role="button" data-bs-toggle="dropdown">Idioma</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Inglés</a></li>
+                            <li><a class="dropdown-item" href="indice.html">Español</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-         <!-- Contenido del navbar -->
-         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-             <!-- Logo y Texto Bongo Squad -->
-             <ul class="navbar-nav me-auto">
-                 <li class="nav-item">
-                     <img class="logo" src="images/logo.png" alt="logo">
-                 </li>
-                 <li class="nav-item">
-                     <p class="bongoSquadText">Bongo FCT</p>
-                 </li>
-             </ul>
+    <style>
+        body {
+          background-color: #343a40;
+          color: #fff;
+          font-family: Arial, sans-serif;
+        }
+        .content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80vh;
+        }
+        .content img {
+          max-width: 50%;
+          height: auto;
+        }
+        .description {
+          margin-left: 20px;
+          max-width: 400px;
+        }
+      </style>
+    </head>
+    <body>
+      
+      <div class="content container">
+        <img id="main-image" src="volteada-Photoroom.png" alt="Imagen Central">
+        <div class="description">
+          <h2><b>Sobre nuestra aplicación</b></h2>
+          <p>
+            Bienvenido a Bongo FCT, tu fuente definitiva para todo lo relacionado con la gestión de FCT.
+            Esta aplicación está diseñada para hacer tu vida más fácil y eficiente.
+          </p>
+        </div>
+      </div>
 
+    
+     <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Bongo FCT. Todos los derechos reservados.</p>
+        <p>Síguenos en
+            <a href="https://github.com/DiegoGMD/Reto2" class="text-white text-decoration-none mx-2">Github</a> |
+            <a href="https://x.com/AhisDols?t=B1PZME416blg_tIE1JHD2Q&s=09" class="text-white text-decoration-none mx-2">Twitter</a>
+        </p>
+    </footer>
+  
 
-             <!-- Dropdowns -->
-             <ul class="navbar-nav">
-               <!-- Dropdown de Configuración -->
-               <li class="nav-item dropdown text-lights">
-                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Diseño</a>
-                 <ul class="dropdown-menu">
-                     <li>
-                         <button id="toggle-dark-mode">
-                             <span id="modeText">Modo Oscuro</span>
-                             <img src="images/blanco.png" alt="Cambiar Modo">
-                         </button>
-                     </li>
-                 </ul>
-             </li>
-               <!-- Dropdown de idioma -->
-               <li class="nav-item dropdown text-light">
-                   <a class="nav-link dropdown-toggle" id="dropdownIdioma" href="#" role="button" data-bs-toggle="dropdown">Idioma</a>
-                   <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="index.html">Inglés</a></li>
-                       <li><a class="dropdown-item" href="#">Español</a></li>
-                   </ul>
-               </li>
-             </ul>
-         </div>
-     </div>
- </nav>
- <script src="script.js"></script>
- 
- <!-- Pie de página -->
- <footer class="bg-dark text-white text-center py-3 mt-4">
-    <p>&copy; 2024 Bongo FCT. Todos los derechos reservados.</p>
-    <p>Síguenos en
-        <a href="https://github.com/DiegoGMD/Reto2" class="text-white text-decoration-none mx-2">Github</a> |
-        <a href="https://twitter.com" class="text-white text-decoration-none mx-2">Twitter</a>
-    </p>
-</footer>
+  <!-- Javascript -->
+  <script src="script.js"></script>
 </body>
-
-
-
-
 </html>
-
-
-
-
